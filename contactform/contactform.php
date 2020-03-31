@@ -1,14 +1,14 @@
-<?php
-
-if(empty($_POST['name'])      ||
-   empty($_POST['company'])   ||
-   empty($_POST['phone'])     ||
-   empty($_POST['email'])     ||
-   empty($_POST['subject'])   ||
+<?php      
+  if( 
+   empty($_POST['name'])        ||
+   empty($_POST['company'])     || 
+   empty($_POST['phone'])       ||
+   empty($_POST['email'])       ||
+   empty($_POST['subject'])     ||
    !filter_var($_POST['email'],FILTER_VALIDATE_EMAIL))
    {
-      //echo("Hier loopt iets fout!");
-   return false;
+   echo("Gelieve volgende velden in te vullen: Naam, Bedrijfsnaam, Telefoonnummer, e-mail, Onderwerp");
+   return "";
    }
    
 $name = strip_tags(htmlspecialchars($_POST['name']));
@@ -23,7 +23,7 @@ $to = 'madhat2312@gmail.com'; // Add your email address inbetween the '' replaci
 $email_subject = "Website Contact Form:  $subject";
 $email_body = "U hebt een nieuw emailbericht van uw website contact form.\n\n"."Hier zijn de details:\n\nNaam: $name\n\nBedrijf: $company\n\nPhone: $phone\n\nEmail: $email_address\n\nTelefoonnummer: $phone\n\nBericht:\n$message";
 $headers = "From: $name\n"; // This is the email address the generated message will be from. We recommend using something like noreply@yourdomain.com.
-$headers .= "Reply-To: $email_address";   
+$headers .= "Reply-To: $email_address";  
 mail($to,$email_subject,$email_body,$headers);
-return true;     
+echo("OK");     
 ?>
