@@ -314,6 +314,9 @@ span {
   #hero .btns a {
     margin: 4px 8px;
   }
+  #taal {
+    margin-right: 50px;
+  }
 }
 
 #hero .btns a:hover {
