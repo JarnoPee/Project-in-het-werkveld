@@ -28,14 +28,21 @@ h2 {
   font-weight: 600;
 }
 
-h4 {
+h3{
   color: #808181;
   background-color: #ffffff;
-  font-size: 13px;
+  font-size: 17px;
   font-weight: 700;
   letter-spacing: 2px;
   text-transform: uppercase;
   line-height: 2;
+}
+
+h4 {
+  color:#808181;
+  background-color: #ffffff;
+  font-size: 15px;
+  font-weight: 300;
 }
 
 h5 {
@@ -63,7 +70,7 @@ ul {
 li {
   color: #808181;
   background-color: #ffffff;
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 300;
   letter-spacing: 2px;
   line-height: 30px;
@@ -73,7 +80,7 @@ li {
 p {
   color: #808181;
   background-color: #ffffff;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 300;
   letter-spacing: 0.5px;
   line-height: 2;
@@ -100,7 +107,7 @@ span {
   border-radius: 50px;
   color: #fff;
   background-color: #1479b9;
-  font-size: 11px;
+  font-size: 13px;
   font-weight: 600;
   padding: 15px 40px;
   text-transform: uppercase;
@@ -169,6 +176,10 @@ span {
 }
 #header #taal {
   padding: 6px 0 0 100px;
+}
+#header #taal p a {
+  background: #ffffff;
+  color: #1479b9;
 }
 
 #header #logo h1 {
@@ -302,7 +313,7 @@ span {
 #hero .btns a {
   color: #555;
   background-color: #ffffff;
-  font-size: 11px;
+  font-size: 13px;
   font-weight: 600;
   text-transform: uppercase;
   margin: 4px 20px;
@@ -406,7 +417,7 @@ span {
   color: #555;
   background-color: #ffffff;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 16px;
   outline: none;
   letter-spacing: 0;
   transition: 0.3s;
@@ -572,7 +583,7 @@ body.mobile-nav-active #mobile-nav {
 
 body.mobile-nav-active #mobile-nav-toggle i {
   color: #fff;
-  background-color: #ffffff;
+  background: rgba(52, 59, 64, 0.9);
 }
 
 /*--------------------------------------------------------------
@@ -791,7 +802,7 @@ body.mobile-nav-active #mobile-nav-toggle i {
   padding: 0 0 10px 50px;
   margin-bottom: 20px;
   line-height: 22px;
-  font-size: 14px;
+  font-size: 16px;
 }
  
 #contact .info .email p {
@@ -903,11 +914,12 @@ body.mobile-nav-active #mobile-nav-toggle i {
 .footer .footer-logo p {
   color: #fff;
   background: #808181;
-  font-size: 12px;
+  font-size: 14px;
   letter-spacing: 1px;
+  padding-top: 10px;
 }
 
-.footer .list-menu > h4 {
+.footer .list-menu > h3 {
   color: #fff;
   background: #808181;
   padding-bottom: 20px;
@@ -916,7 +928,7 @@ body.mobile-nav-active #mobile-nav-toggle i {
 .footer .list-menu ul li  {
   color: #fff;
   background: #808181;
-  font-size: 12px;
+  font-size: 16px;
   padding-left: 5px;
   text-decoration: none;
   letter-spacing: 0;
@@ -924,8 +936,7 @@ body.mobile-nav-active #mobile-nav-toggle i {
 .footer .list-menu ul li a {
   color: #fff;
   background: #808181;
-  font-size: 12px;
-  padding-left: 5px;
+  font-size: 16px;
   text-decoration: none;
   letter-spacing: 0;
 }
