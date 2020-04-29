@@ -21,7 +21,7 @@ $message = strip_tags(htmlspecialchars($_POST['message']));
 
 $to = 'info@beforum.be'; // Add your email address inbetween the '' replacing yourname@yourdomain.com - This is where the form will send a message to.
 $email_subject = "Website Contact Form:  $subject";
-$email_body = "U hebt een nieuw emailbericht van uw website contact form.\n\n"."Hier zijn de details:\n\nNaam: $name\n\nBedrijf: $company\n\nPhone: $phone\n\nEmail: $email_address\n\nTelefoonnummer: $phone\n\nBericht:\n$message";
+$email_body = "U hebt een nieuw emailbericht van uw website contact form.\n\n"."Hier zijn de details:\n\nNaam: $name\n\nBedrijf: $company\n\nTelefoonnummer: $phone\n\nEmail: $email_address\n\nOnderwerp: $subject\n\nBericht:\n$message";
 $headers = "From: $name\n"; // This is the email address the generated message will be from. We recommend using something like noreply@yourdomain.com.
 $headers .= "Reply-To: $email_address";  
 mail($to,$email_subject,$email_body,$headers);

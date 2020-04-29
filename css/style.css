@@ -734,6 +734,11 @@ body.mobile-nav-active #mobile-nav-toggle i {
   width: 100%;
 }
 
+#blog ul li a {
+  background: #ffffff;
+  color: #1479b9;
+}
+
 #blog .block-blog .content-blog h4 {
   line-height: 24px;
   margin-bottom: 20px;
@@ -923,6 +928,7 @@ body.mobile-nav-active #mobile-nav-toggle i {
   color: #fff;
   background: #808181;
   padding-bottom: 20px;
+  padding-left: 3px;
 }
 
 .footer .list-menu ul li  {
